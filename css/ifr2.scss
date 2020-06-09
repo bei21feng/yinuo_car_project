@@ -1,3 +1,10 @@
+@mixin imgCut {
+    width: 88px;
+    height: 88px;
+    // border-radius: 50%;
+    // border: 1px solid #0f6bb0;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -7,7 +14,6 @@
 
 section.test_title {
     text-align: center;
-    grid-area: test_title;
     position: relative;
     line-height: 7vh;
 
@@ -23,5 +29,44 @@ section.test_title {
     hr {
         width: 60px;
         margin: 0 auto;
+    }
+}
+
+ul {
+    display: flex;
+
+    li {
+        margin-left: 120px;
+
+        div:hover {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.image1 {
+    @include imgCut();
+    background: url(../img/img-预约检测/icon.png) 0px 0px no-repeat;
+}
+
+.image2 {
+    @include imgCut();
+    background: url(../img/img-预约检测/icon.png) -88px 0px no-repeat;
+}
+
+.image3 {
+    @include imgCut();
+    background: url(../img/img-预约检测/icon.png) -176px 0px no-repeat;
+}
+
+.pic {
+    position: absolute;
+    left: 250px;
+    margin-top: 100px;
+
+
+    img {
+        width: 50%;
+        height: 50%;
     }
 }

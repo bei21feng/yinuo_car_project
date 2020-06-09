@@ -9,12 +9,12 @@
 main {
   display: -ms-grid;
   display: grid;
-  grid-template: "test_title test_title" 18vh "test_pic test_num" 72vh/2fr 1fr;
+  grid-template: "test_title test_title" 18vh "test_pic test_num" 72vh/650px 70px;
 }
 
 img {
-  width: 60%;
-  height: 70%;
+  width: 32%;
+  height: 50%;
 }
 
 ul {
