@@ -1,0 +1,38 @@
+/* FONT STYLE */
+*{
+	margin: 0;
+	padding: 0;
+}
+.color1{
+	color: #979797;
+}
+.color2{
+	color: #337ab6;
+}
+.font1{
+	font-family: simsun; 
+	font-weight: bold;
+}
+.font2{
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.size1{
+	font-size: 20px;
+}
+.size2{
+	font-size: 25px;
+}
+.height1{
+	line-height: 30px;
+}
+.height2{
+	line-height: 35px;
+}
+.height3{
+	line-height: 50px;
+}
+#hr-style{
+	margin-left: 3%; 
+	margin-right: 3%;
+}

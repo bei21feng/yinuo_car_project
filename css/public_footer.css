@@ -1,0 +1,154 @@
+body{
+	font-family: 等线;
+}
+#foot-intro{
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	width: 100%;
+}
+.intro-tag{
+	margin: 5% auto;
+	display: flex;
+	flex-direction: row;
+	color: #979797;
+}
+.intro-tag p{
+	line-height: 55px;
+	margin-left: 25px;
+}
+.circle{
+	width: 55px;
+	height: 55px;
+	background-color:transparent;
+	border:1px solid #337ab6;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+}
+.cir1{
+	background-image: url(../img/img-关于我们/icon_foot1.png);
+}
+.cir2{
+	background-image: url(../img/img-关于我们/icon_foot2.png);
+}
+.cir3{
+	background-image: url(../img/img-关于我们/icon_foot3.png);
+}
+.cir4{
+	background-image: url(../img/img-关于我们/icon_foot4.png);
+}
+#footer{
+	width: 100%;
+	background-color: #151C21;
+	font-size: 15px;
+	font-weight: 300;
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+#footer a{
+	text-decoration:none;
+	color:white;
+}
+#footer hr{
+	clear: both;
+	background-color: #444C51; 
+	height: 1px; 
+	border: none;
+}
+.info{
+	color: white;
+	background-color: #151C21;
+	line-height: 30px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 5%;
+}
+.infolist{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+#info-guard{
+	margin-right: 50px;
+}
+#info-check{
+	margin-right: 50px;
+}
+.foot-title{
+	font-family: simsun;
+	font-size: 18px;
+}
+.left-small-info{
+	margin: 0 auto;
+}
+.foot-icon{
+	color:#337ab6; 
+	float: left;
+	font-size: 17px;
+	margin-top: 5px;
+}
+#mail-line{
+	margin-top: 10px;
+}
+.mail{
+	clear: left;
+}
+#icon_contact{
+	margin-right: 15px;
+}
+#icon_mail{
+	margin-right: 15px;
+}
+.foot-iconinfo{
+	float: left;
+	margin-left: 17px;
+	font-family: sans-serif;
+	font-weight: bold; 
+	font-size: 17px;
+}
+#num{
+	line-height: 25px;
+}
+#time{
+	color: #565B5F; 
+	font-size: 13px; 
+	font-weight: 100;
+}
+#addr{
+	margin-top: 0.25%;	
+}
+.code{
+	width: 90px;
+}
+#bottom{
+	margin-left: 3%;
+	color: #444C51;
+}
+#bottom p{
+	margin-top: 2.5%;
+}
+/* Color */
+.hvr-color{	
+}
+.hvr-color:hover{
+	color: #2098D1;
+}
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

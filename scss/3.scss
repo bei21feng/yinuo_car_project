@@ -1,3 +1,227 @@
+$cardHeight : 274px;
+$themeColor : #0f6bb0;
+$paddingLeft : 30px;
+
 * {
-    margin: 2px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blog {
+    width: 100%;
+    height: auto;
+    // background-color: antiquewhite;
+
+    .card {
+        margin: 65px 75px;
+        height: $cardHeight;
+        border: 1px solid lightgray;
+        background-color: white;
+        display: grid;
+        grid-template: "a1 a2"70px "a1 a3"144px "a1 a4"60px/241px 1fr;
+
+
+        #d1 {
+            grid-area: a1;
+            position: relative;
+
+            .year {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                z-index: 2;
+                width: 80px;
+                height: 35px;
+                background-color: $themeColor;
+                color: white;
+                font-size: x-large;
+                text-align: center;
+                // top: 0;
+            }
+
+            img {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                width: 80%;
+                height: 80%;
+
+                &:hover {
+                    width: 85%;
+                    height: 85%;
+                }
+            }
+        }
+
+        #d2 {
+            grid-area: a2;
+            // background-color: lightpink;
+            padding-left: $paddingLeft;
+            padding-top: 20px;
+        }
+
+        #d3 {
+            grid-area: a3;
+            // background-color: lightgreen;
+            padding-left: $paddingLeft;
+            padding-right: 50px;
+            padding-top: 20px;
+
+            article {
+                // font-size: large;
+            }
+        }
+
+        #d4 {
+            grid-area: a4;
+            // background-color: lightseagreen;
+            position: relative;
+            ;
+
+            #arrow {
+                position: absolute;
+                left: $paddingLeft;
+                top: 8px;
+            }
+
+            #circle {
+                position: absolute;
+                left: 20px;
+                transition-duration: 0.8s;
+                transition-property: transform;
+
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
+
+.top-pic {
+    position: relative;
+
+    .animate {
+        position: absolute;
+        top: 0;
+        left: 550px;
+        // background-color: pink;
+        width: 316px;
+        height: 210px;
+
+        #ani1 {
+            position: absolute;
+            top: -35px;
+            width: 158px;
+            height: 210px;
+            // background-color: black;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                left: 158px;
+                transition: 1.5s;
+            }
+        }
+
+        #ani2 {
+            position: absolute;
+            top: -35px;
+            left: 158px;
+            width: 158px;
+            height: 210px;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                left: -158px;
+                transition: 1.5s;
+            }
+        }
+    }
+
+    .top-banner {
+        width: 100%;
+        height: auto;
+    }
+
+    .top-title {
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+.mid-pic {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.block {
+
+    hr {
+        display: inline-block;
+        width: 280px;
+        margin-left: 10px;
+    }
+
+    ul {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            border: 1px solid lightgray;
+            list-style: none;
+            margin: 0 65px;
+            padding: 15px 28px;
+            font-size: larger;
+            font-weight: bold;
+        }
+    }
+}
+
+#zixun {
+    position: fixed;
+    right: 0;
+    width: 150px;
+    height: 50px;
+}
+
+nav {
+    position: relative;
+
+    ul {
+        display: flex;
+        padding: 30px;
+        list-style: none;
+
+        li {
+            border: 1px solid gray;
+            padding: 8px 15px;
+            margin-left: 10px;
+        }
+    }
+
+    ul#go {
+        position: absolute;
+        top: 0px;
+        right: 70px;
+        font-size: large;
+
+        li {
+            padding: 12px 17px;
+            cursor: pointer;
+
+            #goNum {
+                width: 30px;
+            }
+        }
+    }
+
 }

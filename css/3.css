@@ -1,1 +1,217 @@
-/* No CSS *//*# sourceMappingURL=3.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.blog {
+  width: 100%;
+  height: auto;
+}
+
+.blog .card {
+  margin: 65px 75px;
+  height: 274px;
+  border: 1px solid lightgray;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "a1 a2" 70px "a1 a3" 144px "a1 a4" 60px/241px 1fr;
+}
+
+.blog .card #d1 {
+  grid-area: a1;
+  position: relative;
+}
+
+.blog .card #d1 .year {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  width: 80px;
+  height: 35px;
+  background-color: #0f6bb0;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+
+.blog .card #d1 img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80%;
+  height: 80%;
+}
+
+.blog .card #d1 img:hover {
+  width: 85%;
+  height: 85%;
+}
+
+.blog .card #d2 {
+  grid-area: a2;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.blog .card #d3 {
+  grid-area: a3;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.blog .card #d4 {
+  grid-area: a4;
+  position: relative;
+}
+
+.blog .card #d4 #arrow {
+  position: absolute;
+  left: 30px;
+  top: 8px;
+}
+
+.blog .card #d4 #circle {
+  position: absolute;
+  left: 20px;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.blog .card #d4 #circle:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.top-pic {
+  position: relative;
+}
+
+.top-pic .animate {
+  position: absolute;
+  top: 0;
+  left: 550px;
+  width: 316px;
+  height: 210px;
+}
+
+.top-pic .animate #ani1 {
+  position: absolute;
+  top: -35px;
+  width: 158px;
+  height: 210px;
+  overflow: hidden;
+}
+
+.top-pic .animate #ani1 img {
+  position: absolute;
+  left: 158px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.top-pic .animate #ani2 {
+  position: absolute;
+  top: -35px;
+  left: 158px;
+  width: 158px;
+  height: 210px;
+  overflow: hidden;
+}
+
+.top-pic .animate #ani2 img {
+  position: absolute;
+  left: -158px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.top-pic .top-banner {
+  width: 100%;
+  height: auto;
+}
+
+.top-pic .top-title {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+}
+
+.mid-pic {
+  position: relative;
+}
+
+.mid-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.block hr {
+  display: inline-block;
+  width: 280px;
+  margin-left: 10px;
+}
+
+.block ul {
+  display: inline-block;
+}
+
+.block ul li {
+  display: inline-block;
+  border: 1px solid lightgray;
+  list-style: none;
+  margin: 0 65px;
+  padding: 15px 28px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#zixun {
+  position: fixed;
+  right: 0;
+  width: 150px;
+  height: 50px;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  list-style: none;
+}
+
+nav ul li {
+  border: 1px solid gray;
+  padding: 8px 15px;
+  margin-left: 10px;
+}
+
+nav ul#go {
+  position: absolute;
+  top: 0px;
+  right: 70px;
+  font-size: large;
+}
+
+nav ul#go li {
+  padding: 12px 17px;
+  cursor: pointer;
+}
+
+nav ul#go li #goNum {
+  width: 30px;
+}
+/*# sourceMappingURL=3.css.map */
