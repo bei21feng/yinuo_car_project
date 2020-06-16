@@ -17,7 +17,7 @@
   background-color: white;
   display: -ms-grid;
   display: grid;
-  grid-template: "a1 a2" 70px "a1 a3" 144px "a1 a4" 60px/241px 1fr;
+  grid-template: 'a1 a2' 70px 'a1 a3' 144px 'a1 a4' 60px/241px 1fr;
 }
 
 .blog .card #d1 {
@@ -44,11 +44,13 @@
   left: 20px;
   width: 80%;
   height: 80%;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .blog .card #d1 img:hover {
-  width: 85%;
-  height: 85%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .blog .card #d2 {
